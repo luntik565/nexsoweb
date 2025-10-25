@@ -60,6 +60,10 @@ header{
     color: #909090;
 }
 
+.list > li > a:hover{
+    color: var(--blue-color);
+}
+
 .number{
     font-weight: 800;
     font-size: 20px;
@@ -242,6 +246,7 @@ header{
     display: flex;
     flex-direction: column;
     background-color: #F8F8F8;
+    align-items: center;
 }
 
 .bigtitle{
@@ -331,10 +336,10 @@ header{
 
 .tasks{
     display: flex;
-    gap: 60px;
     margin-top: 60px;
     height: max-content;
 }
+
 
 .taskcardtext{
     color: #333333;
@@ -348,7 +353,7 @@ header{
     margin: 0 auto;
 }
 
-.faq{
+/* .faq{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -385,11 +390,47 @@ header{
     margin-left: 15px;
     margin-top: 15px;
 }
+*/
 
-.answer{
-    overflow: hidden;
-    max-height: 0;
+
+.faq-container {
+    width: 66%;
+    margin: auto;
 }
+
+.question {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #FFFFFF;
+    border-radius: 11px;
+    padding: 30px;
+    margin-bottom: 15px;
+}
+
+.q-text{
+    font-weight: 700;
+    font-size: 19px;
+    color: #313131;
+}
+
+.answer {
+    display: none;
+    padding-left: 10px;
+    background-color: #FFFFFF;
+    font-weight: 700;
+    font-size: 19px;
+    border-radius: 11px;
+    padding: 30px;
+    border-bottom:1px solid var(--blue-color);
+    margin-bottom: 15px;
+    margin-top: -15px;
+    color: #313131;
+}
+
+.active {
+    background-color: #FFFFFF;
+}
+
 
 .contactblock{
     width: 55%;
@@ -508,6 +549,7 @@ header{
     .tasks{
         flex-direction: column;
         align-items: center;
+        gap: 60px;
     }
 
     .reviewscontainer{
@@ -556,6 +598,10 @@ header{
     }
 
     .contactblock{
+        width: 90%;
+    }
+
+    .faq-container{
         width: 90%;
     }
 }
