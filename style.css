@@ -242,6 +242,7 @@ header{
 }
 /* конец услуг */
 
+/* примеры */
 .example{
     display: flex;
     flex-direction: column;
@@ -325,7 +326,8 @@ header{
 .center{
     margin: auto;
 }
-
+/* конец примеров */
+/*  */
 .textcenter{
     text-align: center;
 }
@@ -352,47 +354,9 @@ header{
     height: 330px;
     margin: 0 auto;
 }
+/*  */
 
-/* .faq{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-}
-
-.faq-i{
-    width: 66%;
-    border-radius: 11px;
-    background-color: #FFFFFF;
-}
-
-.quest{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 30px;
-}
-
-.qtext{
-    font-weight: 700;
-    font-size: calc(19px + 3px * (100vw / 1400));
-}
-
-.faq-b{
-    width: 48px;
-    height: 48px;
-    border: 1px solid #D3D3D3;
-    border-radius: 50%;
-    background-color: #F8F8F8;
-}
-
-.faq-b > img{
-    margin-left: 15px;
-    margin-top: 15px;
-}
-*/
-
-
+/* частозадаваемые вопросы */
 .faq-container {
     width: 66%;
     margin: auto;
@@ -430,7 +394,14 @@ header{
 .active {
     background-color: #FFFFFF;
 }
-
+/*  */
+.contactsect{
+    margin: auto;
+    margin-top: 200px;
+    margin-bottom: 100px; 
+    display: flex; 
+    justify-content: center;
+}
 
 .contactblock{
     width: 55%;
@@ -441,6 +412,7 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-shadow: 12px 11px 18px 0px rgba(34, 60, 80, 0.2);
 }
 
 .contacttitle{
@@ -460,6 +432,7 @@ header{
     font-size: 21px;
     color: #909090;
     padding-bottom: 80px;
+    text-align: center;
 }
 
 .contactnum{
@@ -469,6 +442,7 @@ header{
     padding-bottom: 20px;
 }
 
+/* отзывы */
 .reviewscontainer{
     display: flex;
     gap: 20px;
@@ -493,6 +467,14 @@ header{
     color: #909090;
 }
 
+.rcimar1{
+    margin-bottom: 74px;
+}
+
+.rcimar2{
+    margin-bottom: 94px;
+}
+/* отзывы */
 @media (max-width:1290px) {
     header{
         width: 100%;
@@ -524,6 +506,10 @@ header{
         transition: transform .5s;
     }
 
+    .greenb{
+        margin-top: 20px;
+    }
+
     .header-item.active{
         display: block;
     }
@@ -552,12 +538,19 @@ header{
         gap: 60px;
     }
 
-    .reviewscontainer{
-        flex-direction: column;
-    }
-
     .contactblock{
         width: 70%;
+    }
+}
+
+@media (max-width:1176px) {
+    .rcimar1 , .rcimar2{
+        margin-bottom: 20px;
+    }
+
+    .reviewscontainer{
+        flex-direction: column;
+        align-items: center;
     }
 }
 
